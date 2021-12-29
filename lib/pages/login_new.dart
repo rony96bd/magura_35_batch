@@ -4,7 +4,7 @@ import 'package:flutter_magura/pages/fade_animation.dart';
 
 class LoginPage2 extends StatelessWidget {
   // const LoginPage2({ Key? key }) : super(key: key);
-
+// new line
   @override
   Widget build(BuildContext context) {
     return Scaffold(
