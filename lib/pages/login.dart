@@ -8,6 +8,7 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   bool changeButton = false;
+  String name = "";
 
   final _formKey = GlobalKey<FormState>();
 
@@ -36,8 +37,8 @@ class _LoginPageState extends State<LoginPage> {
               height: 200,
               child: Image.asset("assets/images/login.png"),
             ),
-            const Text(
-              "Login Page",
+            Text(
+              "Welcome $name",
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
@@ -80,9 +81,13 @@ class _LoginPageState extends State<LoginPage> {
                         }
                         return null;
                       },
+                      onChanged: (value) {
+                        name = value;
+                        setState(() {});
+                      },
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Material(

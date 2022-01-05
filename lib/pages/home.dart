@@ -14,6 +14,21 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text("HomePage"),
       ),
+      drawer: Drawer(
+        child: Column(
+          children: [
+            Container(
+              height: 220,
+              width: 320,
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: NetworkImage(
+                          "https://www.freevector.com/uploads/vector/preview/3666/FreeVector-Water-Drop-background.jpg"),
+                      fit: BoxFit.cover)),
+            ),
+          ],
+        ),
+      ),
       body: Container(
         child: Text("This is HomePage"),
       ),
