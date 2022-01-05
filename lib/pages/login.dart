@@ -68,6 +68,7 @@ class _LoginPageState extends State<LoginPage> {
                                 BorderRadius.all(Radius.circular(25.0)),
                             borderSide: BorderSide(color: Colors.blue)),
                         filled: true,
+                        prefixIcon: Icon(Icons.person),
                         hintStyle:
                             TextStyle(color: Colors.grey.withOpacity(0.8)),
                         hintText: "Type your Username",
@@ -103,6 +104,7 @@ class _LoginPageState extends State<LoginPage> {
                                   BorderRadius.all(Radius.circular(25.0)),
                               borderSide: BorderSide(color: Colors.blue)),
                           filled: true,
+                          prefixIcon: Icon(Icons.password),
                           hintStyle:
                               TextStyle(color: Colors.grey.withOpacity(0.8)),
                           hintText: "Type your Password",
